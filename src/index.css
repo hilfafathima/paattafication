@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark: #0B0F19;
+  --bg-card: rgba(15, 23, 42, 0.88);
+  --bg-card-hover: rgba(30, 41, 59, 0.95);
+  --text-primary: #F8FAFC;
+  --text-muted: #CBD5E1;
+  --text-dim: #94A3B8;
+  --border-hud: #334155;
+  --border-cyan: rgba(6, 182, 212, 0.4);
+  --accent-cyan: #06B6D4;
+  --accent-green: #10B981;
+  --accent-crimson: #FF2E4D;
+  --accent-amber: #F59E0B;
+  --shadow-hud: 0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --font-malayalam: 'Noto Sans Malayalam', sans-serif;
+  --font-typewriter: 'Special Elite', 'Courier Prime', monospace;
+  --font-serif: 'Playfair Display', 'Cinzel', serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, body.vintage-parchment-bg {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.08) 0%, transparent 70%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Typography Utility Classes */
+.font-malayalam {
+  font-family: var(--font-malayalam);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.font-typewriter {
+  font-family: var(--font-typewriter);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* HUD Glassmorphism Card Container */
+.paper-document, .hud-card {
+  background-color: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-hud);
+  border-radius: 14px;
+  box-shadow: var(--shadow-hud);
+  position: relative;
+  overflow: hidden;
+}
+
+.paper-document::before, .hud-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green), var(--accent-crimson));
+  opacity: 0.9;
+}
+
+/* Background Confidential / Cyber Watermark */
+.confidential-watermark {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  font-family: var(--font-typewriter);
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(6, 182, 212, 0.03);
+  letter-spacing: 0.25em;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Holographic Security Badge / Stamp Styles */
+.official-stamp, .holo-badge {
+  border: 1px solid var(--accent-crimson);
+  color: var(--accent-crimson);
+  padding: 6px 14px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(255, 46, 77, 0.1);
+  box-shadow: 0 0 12px rgba(255, 46, 77, 0.15);
+  border-radius: 6px;
+}
+
+.official-stamp.blue, .holo-badge.blue, .holo-badge.cyan {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  background-color: rgba(6, 182, 212, 0.1);
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.15);
+}
+
+.official-stamp.gold, .holo-badge.gold, .holo-badge.amber {
+  border-color: var(--accent-amber);
+  color: var(--accent-amber);
+  background-color: rgba(245, 158, 11, 0.1);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.15);
+}
+
+.holo-badge.green {
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+  background-color: rgba(16, 185, 129, 0.1);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.15);
+}
+
+/* Equation Box */
+.equation-box {
+  background-color: rgba(15, 23, 42, 0.85);
+  border-left: 4px solid var(--accent-cyan);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  margin: 12px 0;
+  box-shadow: inset 0 0 10px rgba(6, 182, 212, 0.05);
+}
+
+/* Chat Styling */
+.chat-container {
+  background-color: rgba(15, 23, 42, 0.85);
+  border: 1px solid var(--border-hud);
+  box-shadow: var(--shadow-hud);
+}
+
+.chat-bubble-department {
+  background-color: #1E293B;
+  color: var(--text-primary);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 0px 14px 14px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.chat-bubble-user {
+  background-color: rgba(6, 182, 212, 0.2);
+  color: #F8FAFC;
+  border: 1px solid var(--accent-cyan);
+  border-radius: 14px 0px 14px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
