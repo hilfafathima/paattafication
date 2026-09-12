@@ -3,6 +3,7 @@
 
 
 # PROJECT NAME: Paattafication 🎯
+#PUBLIC URL:  https://paattafication.vercel.app/
 
 
 ## Basic Details
