@@ -28,69 +28,438 @@ example execution of one among the many features :   if someone's date of birth 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Languages: TypeScript, JavaScript, HTML, and CSS
+- Frameworks: React 18 and Vite
+- Libraries: Tailwind CSS, Lucide React, Gemini API, jsPDF, html2canvas, and canvas-confetti
+- Tools: Node.js, npm, PostCSS, Autoprefixer, and ESLint
 
 
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+```bash
+npm install
+```
 
 # Run
-[commands]
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+![Screenshot1](/screenshots/1.png)
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![Screenshot2](/screenshots/2.png)
 *Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![Screenshot3](/screenshots/3.png)
 *Add caption explaining what this shows*
+
+
+![Screenshot4](/screenshots/4.png)
+*Add caption explaining what this shows*
+
+
+![Screenshot5](/screenshots/5.png)
+*Add caption explaining what this shows*
+
+
+![Screenshot6](/screenshots/6.png)
+*Add caption explaining what this shows*
+
+
+![Screenshot7](/screenshots/7.png)
+*Add caption explaining what this shows*
+
+
+![Screenshot8](/screenshots/8.png)
+*Add caption explaining what this shows*
+
+
+
+
+
+
+
+
+
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+PAATTAFICATION — COMPLETE USER & SYSTEM WORKFLOW
 
-For Hardware:
+START
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│              WELCOME SCREEN                  │
+│                                              │
+│  പാറ്റഫിക്കേഷൻ                              │
+│  PAATTAFICATION                              │
+│  THE DEPARTMENT OF UNNECESSARY BIOLOGY       │
+│                                              │
+│  "Welcome, Potential Cockroach."             │
+│                                              │
+│  [ BEGIN INVESTIGATION ]                     │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│          DEPARTMENT INTRODUCTION             │
+│                                              │
+│  Explain the fictional department,           │
+│  investigation and purpose.                  │
+│                                              │
+│  "We study cockroaches.                     │
+│   Today, we study you."                      │
+│                                              │
+│  [ PROCEED TO REGISTRATION ]                 │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│             SUBJECT REGISTRATION             │
+│                                              │
+│  Collect basic information:                  │
+│                                              │
+│  • Name                                      │
+│  • Height                                    │
+│  • Mass / Weight                             │
+│  • Date of Birth                             │
+│  • Gender                                    │
+│  • Current Status                            │
+│                                              │
+│  Consent / fictional investigation notice    │
+│                                              │
+│  [ SUBMIT SUBJECT ]                          │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│              INVESTIGATION ID                │
+│                                              │
+│  Generate unique Investigation ID             │
+│  Example: PTF-2026-XXXX                      │
+│                                              │
+│  Store subject information in JS state.      │
+│                                              │
+│  [ BEGIN QUESTIONING ]                       │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+╔══════════════════════════════════════════════╗
+║              AI CHAT INVESTIGATION           ║
+║                                              ║
+║  D.U.B. RESEARCH OFFICER                     ║
+║  Department of Unnecessary Biology           ║
+║                                              ║
+║  AI asks questions one at a time.            ║
+║                                              ║
+║  User answers                                ║
+║       ↓                                      ║
+║  JavaScript stores answer                    ║
+║       ↓                                      ║
+║  Conversation history updated                ║
+║       ↓                                      ║
+║  Request sent to backend                     ║
+║       ↓                                      ║
+║  Gemini / AI API                             ║
+║       ↓                                      ║
+║  AI generates contextual response            ║
+║       ↓                                      ║
+║  Response displayed in chat                  ║
+║       ↓                                      ║
+║  Next question                               ║
+║                                              ║
+╚══════════════════════════════════════════════╝
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│          CONTROLLED QUESTION FLOW            │
+│                                              │
+│  01 → Professional / Current Status          │
+│  02 → Height                                  │
+│  03 → Mass                                    │
+│  04 → Date of Birth                           │
+│  05 → Deadline Behaviour                      │
+│  06 → Night Activity                          │
+│  07 → Survival Behaviour                      │
+│  08 → Food / Opportunistic Behaviour          │
+│  09 → Adaptability                            │
+│  10 → Environmental Response                  │
+│                                              │
+│  AI generates the conversational wording.    │
+│  JavaScript controls the required questions. │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│             LOCAL CALCULATIONS               │
+│                                              │
+│  JavaScript calculation engine runs:         │
+│                                              │
+│  • Gravitational Force                       │
+│  • Vertical Occupancy                        │
+│  • Birth Season Classification               │
+│  • Behavioural Scores                        │
+│  • Adaptability Score                        │
+│  • Night Activity Score                      │
+│  • Deadline Resistance                       │
+│  • Survival Index                            │
+│  • Food Opportunism                          │
+│  • Environmental Resilience                  │
+│                                              │
+│  All important numerical calculations        │
+│  happen locally and deterministically.       │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│          COCKROACH COMPATIBILITY ENGINE      │
+│                                              │
+│  Combine behavioural indicators and          │
+│  predefined fictional rules.                │
+│                                              │
+│              ↓                               │
+│                                              │
+│  CCI™ — COCKROACH COMPATIBILITY INDEX        │
+│                                              │
+│  Result: 0–99.9%                             │
+│                                              │
+│  Same inputs → Same result                   │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│       FICTIONAL GENE COMPATIBILITY           │
+│                                              │
+│  Generate fictional parody metric:           │
+│                                              │
+│  SIMULATED COCKROACH GENE                    │
+│  COMPATIBILITY™                              │
+│                                              │
+│  Example: 87.4%                              │
+│                                              │
+│  IMPORTANT:                                  │
+│  This is NOT real DNA, genetics, ancestry    │
+│  or biological similarity.                   │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│            FICTIONAL TAXONOMY                │
+│                                              │
+│  Based on calculated traits, generate        │
+│  deterministic fictional classification.     │
+│                                              │
+│  Example:                                    │
+│                                              │
+│  Genus: Periplaneta                          │
+│  Species: procrastinatus                     │
+│                                              │
+│  Common Name:                                │
+│  "The Career-Resistant Cockroach"            │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│            PRELIMINARY ANALYSIS              │
+│                                              │
+│  Display collected results:                  │
+│                                              │
+│  • Subject Profile                           │
+│  • Physics Analysis                          │
+│  • Behavioural Indicators                    │
+│  • Adaptability                              │
+│  • Survival Index                            │
+│  • CCI™                                     │
+│  • Preliminary Concern Level                 │
+│                                              │
+│  "The answers have raised further questions."│
+│                                              │
+│  [ RUN FULL ANALYSIS ]                       │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+╔══════════════════════════════════════════════╗
+║             FULL ANALYSIS ENGINE             ║
+║                                              ║
+║  SUBJECT DATA VERIFIED                       ║
+║              ↓                               ║
+║  GRAVITATIONAL ANALYSIS                      ║
+║              ↓                               ║
+║  SEASONAL CLASSIFICATION                     ║
+║              ↓                               ║
+║  BEHAVIOURAL NORMALIZATION                   ║
+║              ↓                               ║
+║  SURVIVAL PATTERN ANALYSIS                   ║
+║              ↓                               ║
+║  EVOLUTIONARY SIMULATION                     ║
+║              ↓                               ║
+║  COCKROACH COMPATIBILITY ENGINE              ║
+║              ↓                               ║
+║  FICTIONAL GENE MODEL                        ║
+║              ↓                               ║
+║  TAXONOMIC CLASSIFICATION                    ║
+║                                              ║
+╚══════════════════════════════════════════════╝
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│            AI SCIENTIFIC REVIEW              │
+│                                              │
+│  Send structured results + conversation      │
+│  context to backend.                         │
+│                                              │
+│                 ↓                            │
+│                                              │
+│              GEMINI API                      │
+│                 ↓                            │
+│                                              │
+│  AI generates:                               │
+│                                              │
+│  • Scientific observations                   │
+│  • Evolutionary commentary                   │
+│  • Behavioural interpretation                │
+│  • Taxonomic explanation                     │
+│  • Researcher notes                          │
+│  • Absurd scientific conclusions             │
+│  • Final departmental verdict                │
+│                                              │
+│  AI does NOT determine numerical scores.     │
+└──────────────────────────────────────────────┘
+  │
+  │
+  ├────────────── GEMINI AVAILABLE ──────────────┐
+  │                                             │
+  │                                             ▼
+  │                                  AI narrative generated
+  │                                             │
+  │                                             │
+  └──────────── GEMINI UNAVAILABLE ─────────────┤
+                                                │
+                                                ▼
+                                   LOCAL FALLBACK ENGINE
+                                                │
+                                                ▼
+                                   Continue investigation
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│             FINAL VERDICT                    │
+│                                              │
+│  Display dramatic result:                    │
+│                                              │
+│              87.4%                           │
+│                                              │
+│       COCKROACH COMPATIBILITY™              │
+│                                              │
+│  Fictional Taxonomy:                         │
+│  Periplaneta procrastinatus                  │
+│                                              │
+│  Common Name:                                │
+│  The Career-Resistant Cockroach              │
+│                                              │
+│  AI-generated departmental observation       │
+│                                              │
+│  FINAL VERDICT:                              │
+│  "The subject remains legally human."        │
+│                                              │
+│  "However, the evidence is becoming         │
+│   difficult to ignore."                     │
+│                                              │
+│  [ VIEW OFFICIAL REPORT ]                    │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+╔══════════════════════════════════════════════╗
+║           OFFICIAL REPORT PAGE               ║
+║                                              ║
+║  PAATTAFICATION                              ║
+║  Department of Unnecessary Biology           ║
+║                                              ║
+║  OFFICIAL SCIENTIFIC ASSESSMENT              ║
+║                                              ║
+║  REPORT NO: PTF-2026-XXXX                    ║
+║  CLASSIFICATION: ABSURD                      ║
+║                                              ║
+║  ────────────────────────────────────────    ║
+║                                              ║
+║  SUBJECT PROFILE                             ║
+║              ↓                               ║
+║  PHYSICS DEPARTMENT                          ║
+║              ↓                               ║
+║  BEHAVIOURAL DEPARTMENT                      ║
+║              ↓                               ║
+║  FICTIONAL GENE MODEL                        ║
+║              ↓                               ║
+║  TAXONOMIC DEPARTMENT                        ║
+║              ↓                               ║
+║  AI SCIENTIFIC OBSERVATIONS                  ║
+║              ↓                               ║
+║  FINAL VERDICT                               ║
+║                                              ║
+╚══════════════════════════════════════════════╝
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│                PDF ENGINE                    │
+│                                              │
+│  Generate genuine multi-page A4 PDF.         │
+│                                              │
+│  Include:                                    │
+│  • Subject information                       │
+│  • Investigation ID                          │
+│  • CCI™ result                               │
+│  • Equations                                 │
+│  • Behavioural analysis                      │
+│  • Fictional gene metric                     │
+│  • Taxonomy                                  │
+│  • AI observations                           │
+│  • Final verdict                             │
+│  • Disclaimer                                │
+└──────────────────────────────────────────────┘
+  │
+  ▼
+┌──────────────────────────────────────────────┐
+│               FINAL ACTIONS                  │
+│                                              │
+│  [ DOWNLOAD OFFICIAL REPORT ]                │
+│                                              │
+│  [ COPY RESULT ]                             │
+│                                              │
+│  [ START ANOTHER INVESTIGATION ]             │
+└──────────────────────────────────────────────┘
+  │
+  ├────────────── COPY RESULT ────────────────► SHAREABLE RESULT
+  │
+  ├──────────── DOWNLOAD PDF ────────────────► PDF FILE
+  │
+  └──────────── NEW INVESTIGATION ───────────► WELCOME
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+Hilfa fathima PM
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
